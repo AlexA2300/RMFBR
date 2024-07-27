@@ -183,25 +183,27 @@ main {
     /* Fixed height */
     flex: 0 0 auto;
     /* Prevent flex-grow and flex-shrink */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .stats-number {
-    text-align: center;
-    margin-top: 50px;
-    -ms-transform: translateY(-40%);
-    transform: translateY(-40%);
     font-size: 4.5em;
     color: #005f73;
     font-weight: bold;
+    margin: 0;
+    line-height: 1;
 }
 
 .stats-label {
     font-weight: bold;
-    text-align: center;
     font-size: 1.2em;
     color: #005f73;
+    margin-top: 10px;
 }
-
 
 .reduced-font .stats-number {
     font-size: 3.5em;
@@ -209,6 +211,10 @@ main {
 
 .add-padding {
     padding-top: 19px;
+}
+
+.padding-right {
+    padding-right: 0px;
 }
 
 .contact-list {
@@ -404,7 +410,7 @@ main {
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1300px) {
     .site-title-wrap {
         display: none;
     }

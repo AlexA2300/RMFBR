@@ -288,7 +288,7 @@ main {
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1300px) {
     .site-title-wrap {
         display: none;
     }
