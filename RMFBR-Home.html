@@ -9,35 +9,37 @@
         href="https://www.rmfbr.org/wp-content/uploads/2024/04/Subject-5-e1714176054548-99x85.png">
     <!-- allow html5 to run in older versions of IE -->
     <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-    <header class="site-header" id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+    <header class="site-header" id="masthead" itemscope itemtype="https://schema.org/WPHeader">
         <div class="header-container">
             <a href="https://www.rmfbr.org/" class="logo-link" aria-label="Rocky Mountain French Bulldog Rescue Home"
                 aria-current="page">
-                <div class="logo-container">
+                <div class="logo-container" itemscope itemtype="https://schema.org/Organization">
                     <img src="https://www.rmfbr.org/wp-content/uploads/2024/04/Subject-5-e1714176054548-99x85.png"
-                        alt="Rocky Mountain French Bulldog Rescue Logo" class="logo-img">
+                        alt="Rocky Mountain French Bulldog Rescue Logo" class="logo-img" itemprop="logo">
                     <div class="site-title-wrap">
-                        <h1 class="site-title">Rocky Mountain French Bulldog Rescue</h1>
-                        <p class="site-description">Because Every French Bulldog Deserves a Furever Home</p>
+                        <h1 class="site-title" itemprop="name">Rocky Mountain French Bulldog Rescue</h1>
+                        <p class="site-description" itemprop="description">Because Every French Bulldog Deserves a
+                            Furever Home</p>
                     </div>
                 </div>
             </a>
-            <nav class="site-navigation" aria-label="Site Navigation: Top Menu">
+            <nav class="site-navigation" aria-label="Site Navigation: Top Menu" role="navigation">
                 <ul class="nav-menu">
-                    <li><a href="https://www.rmfbr.org/donate/">Donate</a></li>
-                    <li><a href="https://www.rmfbr.org/our-dogs/">Our Dogs</a></li>
-                    <li><a href="https://www.rmfbr.org/surrender/">Surrender</a></li>
-                    <li><a href="https://www.rmfbr.org/home/volunteer-2/">Volunteer</a></li>
-                    <li><a href="https://www.rmfbr.org/boutique/">Boutique</a></li>
-                    <li><a href="https://www.rmfbr.org/events/">Events</a></li>
-                    <li><a href="https://www.rmfbr.org/about-us/licensing-2/">Licensing</a></li>
-                    <li><a href="https://www.rmfbr.org/french-bulldog-resources/">Owner Resources</a></li>
+                    <li><a href="https://www.rmfbr.org/donate/" aria-label="Donate Page">Donate</a></li>
+                    <li><a href="https://www.rmfbr.org/our-dogs/" aria-label="Our Dogs Page">Our Dogs</a></li>
+                    <li><a href="https://www.rmfbr.org/surrender/" aria-label="Surrender Page">Surrender</a></li>
+                    <li><a href="https://www.rmfbr.org/home/volunteer-2/" aria-label="Volunteer Page">Volunteer</a></li>
+                    <li><a href="https://www.rmfbr.org/boutique/" aria-label="Boutique Page">Boutique</a></li>
+                    <li><a href="https://www.rmfbr.org/events/" aria-label="Events Page">Events</a></li>
+                    <li><a href="https://www.rmfbr.org/about-us/licensing-2/" aria-label="Licensing Page">Licensing</a>
+                    </li>
+                    <li><a href="https://www.rmfbr.org/french-bulldog-resources/"
+                            aria-label="Owner Resources Page">Owner Resources</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,7 +49,7 @@
         <section id="banner" class="content-section">
             <img src="images/french-banner.png" alt="French Bulldog standing in a field of flowers"
                 class="banner-image">
-            <ul class="stats-list">
+            <ul class="stats-list" role="list">
                 <li class="stats-card">
                     <div class="stats-number">32</div>
                     <div class="stats-label">Dogs in Foster</div>
@@ -83,7 +85,7 @@
                     family
                     member until they find the perfect Forever Home.</strong></p>
 
-            <ul class="contact-list">
+            <ul class="contact-list" role="list">
                 <li class="contact-card">
                     <h3><strong>Mail To:</strong></h3>
                     <strong>
@@ -99,13 +101,14 @@
                 <li class="contact-card">
                     <h3><strong>Email To:</strong></h3>
                     <strong>
-                        <p><a href="mailto:Rockymountainfbr@gmail.com">Rockymountainfbr@gmail.com</a></p>
+                        <p><a href="mailto:Rockymountainfbr@gmail.com"
+                                aria-label="Email Rocky Mountain FBR">Rockymountainfbr@gmail.com</a></p>
                     </strong>
                 </li>
                 <li class="contact-card">
                     <h3><strong>Website:</strong></h3>
                     <strong>
-                        <p><a href="https://www.rmfbr.org">www.rmfbr.org</a></p>
+                        <p><a href="https://www.rmfbr.org" aria-label="Rocky Mountain FBR Website">www.rmfbr.org</a></p>
                     </strong>
                 </li>
                 <li class="contact-card">
@@ -119,16 +122,16 @@
 
         <section id="meet-the-team" class="content-section">
             <h2>Meet the Team</h2>
-            <ul class="team-list">
+            <ul class="team-list" role="list">
                 <li class="team-card">
-                    <a href="link-to-kelly-page">
+                    <a href="link-to-kelly-page" aria-label="Kelly, Founder and Director">
                         <img src="images/kelly.png" alt="Kelly, Founder and Director" class="team-img" />
                         <h3>Kelly</h3>
                         <p>Founder and Director</p>
                     </a>
                 </li>
                 <li class="team-card">
-                    <a href="link-to-michelle-page">
+                    <a href="link-to-michelle-page" aria-label="Michelle, VP/Head Of Fundraising And Partnerships">
                         <img src="images/michelle.png" alt="Michelle, VP/Head Of Fundraising And Partnerships"
                             class="team-img" />
                         <h3>Michelle</h3>
@@ -136,14 +139,14 @@
                     </a>
                 </li>
                 <li class="team-card">
-                    <a href="link-to-jen-garrett-page">
+                    <a href="link-to-jen-garrett-page" aria-label="Jen Garrett, Board Treasurer">
                         <img src="images/jen.png" alt="Jen Garrett, Board Treasurer" class="team-img" />
                         <h3>Jen Garrett</h3>
                         <p>Board Treasurer</p>
                     </a>
                 </li>
                 <li class="team-card">
-                    <a href="link-to-interns-page">
+                    <a href="link-to-interns-page" aria-label="Meet the Interns">
                         <img src="images/interns.png" alt="Meet the Interns" class="team-img" />
                         <h3>Meet the Interns</h3>
                     </a>
@@ -152,9 +155,9 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
         <p>Copyright © 2024 Rocky Mountain French Bulldog Rescue | Powered by Astra WordPress Theme</p>
-        <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        <button class="back-to-top" onclick="scrollToTop()" aria-label="Back to Top">Back to Top</button>
     </footer>
 
     <script>
