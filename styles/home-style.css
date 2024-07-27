@@ -161,10 +161,15 @@ main {
     left: 5%;
     right: 20%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    /* Prevent wrapping to new lines */
     list-style: none;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+    /* Hide horizontal overflow */
+    white-space: nowrap;
+    /* Prevents the content from wrapping */
 }
 
 .stats-card {
@@ -173,7 +178,11 @@ main {
     padding: 20px;
     margin: 20px;
     width: 175px;
+    /* Fixed width */
     height: 175px;
+    /* Fixed height */
+    flex: 0 0 auto;
+    /* Prevent flex-grow and flex-shrink */
 }
 
 .stats-number {
@@ -192,6 +201,7 @@ main {
     font-size: 1.2em;
     color: #005f73;
 }
+
 
 .reduced-font .stats-number {
     font-size: 3.5em;
@@ -391,5 +401,17 @@ main {
 
     .contact-card {
         width: 90%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .site-title-wrap {
+        display: none;
+    }
+}
+
+@media (max-width: 1075px) {
+    .stats-list {
+        display: none;
     }
 }
